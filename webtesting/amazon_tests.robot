@@ -1,11 +1,16 @@
-*** Test Cases ***
+*** Settings ***
+Documentation    Essa suite testa o ste da Amazon.com.busca_produtos
+Resource         amazon_resources.robot
+Test Setup       Abrir o navegador
+Test Teardown    Fechar o navegador
 
+*** Test Cases ***
 Test Case 01 - Acesso ao menu "Eletrônicos"
     [Documentation]    Esse teste verifica o menu eletronicos do site da Amazon.com.br
     ...                e verific a categoria Computadores e Informática
     [Tags]             menus  categorias
-    Acessar a home page do site amazon.com.br
-    Entrar no menu "Eletronicos"
+    Acessar a home page do site Amazon.com.br
+    Entrar no menu "Eletrônicos"
     Verificar se o titulo da pagina fica com o titulo "Eletrônicos e Tecnologia | Amazon.com.br"
     Verificar se aparece a frase "Eletronicos e Tecnologia"
     Verificar se aparece a categorias "Computadores e Informática"
