@@ -11,9 +11,9 @@ Test Case 01 - Acesso ao menu "Eletrônicos"
     [Tags]             menus  categorias
     Acessar a home page do site Amazon.com.br
     Entrar no menu "Eletrônicos"
+    Verificar se aparece a frase "Eletrônicos e Tecnologia"
     Verificar se o titulo da pagina fica com o titulo "Eletrônicos e Tecnologia | Amazon.com.br"
-    Verificar se aparece a frase "Eletronicos e Tecnologia"
-    Verificar se aparece a categorias "Computadores e Informática"
+    Verificar se aparece a categoria "Computadores e Informática"
 
 
 Test Case 02 - Pesquisa de um produto
