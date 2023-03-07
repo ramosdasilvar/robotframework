@@ -4,9 +4,9 @@ Foi utilizado como base o site para amazon para estudos.
 
 # Instalação
 - dependecy:
-  1- python > 3.X: Download em "https://www.python.org/", necessário incluir no "path" do sistema operacional.
-  2- robotframework: Instalação via linha do comando no terminal, digitar: "pip install robotframework". GetStarted em https://robotframework.org/?tab=1#getting-started. 
-  3- SeleniumLibrary: É uma Library do robotframework. Instalação via linha do comando no terminal, digitar:  pip install --upgrade robotframework-seleniumlibrary
+  - python > 3.X: Download em "https://www.python.org/", necessário incluir no "path" do sistema operacional.
+  - robotframework: Instalação via linha do comando no terminal, digitar: "pip install robotframework". GetStarted em https://robotframework.org/?tab=1#getting-started. 
+  - SeleniumLibrary: É uma Library do robotframework. Instalação via linha do comando no terminal, digitar:  pip install --upgrade robotframework-seleniumlibrary
 
 # Execução do projeto
 - Acessar a pasta /webtesting via terminal
