@@ -24,12 +24,12 @@ Acessar a home page do site Amazon.com.br
 Entrar no menu "Eletrônicos"
     Click Element    locator=${MENU_ELETRONICOS}
 
+Verificar se o titulo da pagina fica com o titulo "${TITLE_ELETRONICOS}"
+    Title Should Be    title=${TITLE_ELETRONICOS}
+
 Verificar se aparece a frase "Eletrônicos e Tecnologia"
     Wait Until Page Contains    text=${TEXT_HEADER_ELETRONICOS}
     Wait Until Element Is Visible    locator=${HEADER_ELETRONICOS}
-
-Verificar se o titulo da pagina fica com o titulo "${TITLE_ELETRONICOS}"
-    Title Should Be    title=${TITLE_ELETRONICOS}
 
 Verificar se aparece a categoria "${NOME_CATEGORIA}"
     Wait Until Element Is Visible    locator=//img[contains(@alt,'${NOME_CATEGORIA}')]
@@ -42,3 +42,29 @@ Clicar no botão de pesquisa
 
 Verificar o resultado da pesquisa, listando o produto "${PRODUTO_BUSCA}"
     Wait Until Element Is Visible    locator=//img[contains(@alt,'Console ${PRODUTO_BUSCA}')]    
+
+Dado que estou na home page da Amazon.com.br
+    Acessar a home page do site Amazon.com.br
+
+Quando acessar o menu "Eletrônicos"
+    Entrar no menu "Eletrônicos"
+
+Então o texto "Eletrônicos e Tecnologia" deve ser exibido na página
+    Verificar se aparece a frase "Eletrônicos e Tecnologia"
+
+E o título da página deve ficar "Eletrônicos e Tecnologia | Amazon.com.br"
+    Verificar se o titulo da pagina fica com o titulo "Eletrônicos e Tecnologia | Amazon.com.br"
+
+E a categoria "Computadores e Informática" deve ser exibida na página
+    Verificar se aparece a categoria "Computadores e Informática"
+
+Quando pesquisar pelo produto "Xbox Series S"
+    Digitar o nome de produto "Xbox Series S" no campo de pesquisa
+    Clicar no botão de pesquisa
+
+Então um produto da linha "Xbox Series S" deve ser mostrado na página
+    Verificar o resultado da pesquisa, listando o produto "Xbox Series S"
+
+E o título da página deve ficar "Amazon.com.br : Xbox Series S"
+    Verificar se o titulo da pagina fica com o titulo "Amazon.com.br : Xbox Series S"
+
